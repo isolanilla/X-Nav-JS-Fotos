@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+<head>
+  	<title>X-NAV-JS-FOTOS</title>
+</head>
+<style type="text/css">
+.imagen{ width:250px; height: 250px;}
+</style>
+<body>
+  <div>
+     <a id="boton" href="javascript:otra_imagen()">Otra imagen</a>
+   </div>
+	<div>
+		<img id="0" class="imagen" style="display:none;" src="http://imageneschistosasparafacebook.com/wp-content/uploads/2015/05/fotos-muy-graciosas-para-whatsapp-3.jpg">
+		<img id="1" class="imagen" style="display:none;"  src="http://k34.kn3.net/taringa/1/8/9/6/0/4/94/faperofull/A6B.jpg?4438">
+		<img id="2" class="imagen" style="display:none;"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ421oTu4QthoMB-0inGK0C8kprGOW-CPGqPlDChmDV3fhsnaH">
+		<img id="3" class="imagen" style="display:none;" src="http://static.notinerd.com/wp-content/uploads/2015/02/643-600x424.jpg">
+	</div>
+
+	<script>
+  function otra_imagen(){
+for (var i = 0; i <= 3; i++) {
+  document.getElementById(i).style.display = "none";
+  };
+    document.getElementById(Math.floor(Math.random()*4)).style.display = "block";
+    }
+  </script>
+</body>
+</html>
